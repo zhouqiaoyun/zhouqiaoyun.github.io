@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>爱奇艺</title>
+	<link rel="stylesheet" type="text/css" href="aiqiyi.css">
+	<style>
+	</style>
+	<script>
+	window.onload=function(){
+	 	var oBtn=document.getElementById('btn');
+	  	var oLi=oBtn.getElementsByTagName('li');
+	  	var oCon=document.getElementById('con');
+	   	var oPic=oCon.getElementsByTagName('li');
+	  // alert(oPic.length)
+	  for (var i = 0; i < oLi.length; i++){
+	  	oLi[i].index=i
+	  	oLi[i].onmouseover=function(){
+	  	 for (var i = 0; i < oLi.length; i++){
+	  		oLi[i].className='btn-word';
+	  		oPic[i].style.display='none';
+
+	  		}
+	  		this.className='btn-word active';
+	  		oPic[this.index].style.display='block'
+	  	}
+	  	
+	  }
+
+	}
+	</script>
+	
+</head>
+<body>
+<div class="box">
+	<div class="head" id="box" >
+		<ul class="con" id="con">
+			<li class="pic1" style="display:block"><a href="###" class="con-pic"></a></li>
+			<li class="pic2"><a href="###" class="con-pic"></a></li>
+			<li class="pic3"><a href="###" class="con-pic"></a></li>
+			<li class="pic4"><a href="###" class="con-pic"></a></li>
+			<li class="pic5"><a href="###" class="con-pic"></a></li>
+			<li class="pic6"><a href="###" class="con-pic"></a></li>
+			<li class="pic7"><a href="###" class="con-pic"></a></li>
+			<li class="pic8"><a href="###" class="con-pic"></a></li>
+			<li class="pic9"><a href="###" class="con-pic"></a></li>
+			<li class="pic10"><a href="###" class="con-pic"></a></li>
+			<input type="text" placeholder="   大好时光" class="search"><input type="button"class="seaicon"/>
+			<span class="search-icon"></span>
+			<p class="head-word clearfix">
+				<a herf="#" class="word1 fr">播放记录<span class="word-icon fr"></span></a>
+				<a herf="#" class="word2 fr">消息<span class="word-icon fr"></span></a>
+				<a herf="#" class="word3 fr">下载</a>
+				<a herf="#" class="word4 fr">上传<span class="word-icon fr"></span></a>
+				<a herf="#" class="word5 fr">开通VIP</a>
+				<a herf="#" class="word6 fr">注册</a>
+				<a herf="#" class="word7 fr">登录</a>
+			</p>
+		</ul>
+		<ul class="btn" id="btn">
+			<li class="btn-word active"><a href="###">北上广不相信眼泪职场</a></li>
+			<li class="btn-word"><a href="###">物资保卫战上演激烈对抗</a></li>
+			<li class="btn-word"><a href="###">灵魂百度:马克再续前缘</a></li>
+			<li class="btn-word"><a href="###">既然没有 那就随便写吧</a></li>
+			<li class="btn-word"><a href="###">超模2:大战鬼马谢依霖</a></li>
+			<li class="btn-word"><a href="###">大秧歌:杨紫抢杨志刚</a></li>
+			<li class="btn-word"><a href="###">爱大片:单身男士自嗨</a></li>
+			<li class="btn-word"><a href="###">007: 伦敦 首映</a></li>
+			<li class="btn-word"><a href="###">歌神啊:何炅谢娜采访</a></li>
+			<li class="btn-word"><a href="###">苏宁双11  何止5折</a></li>
+		</ul>	
+	</div>
+	<div class="content">
+		<div class="con-bor clearfix">
+			<ul class="con-word fl">
+				<li class="con-word-1"><a href="#" class="con-word-1" >娱乐</a></li>
+				<li class="con-word-1"><a href="#" class="con-word-1" >体育</a></li>
+				<li class="con-word-1"><a href="#" class="con-word-1" >资讯</a></li>
+			</ul>
+			<ul class="con-word1 fl">
+				<li class="con-word11 clearfix">
+					<a href="#" class="con-word-2 fl">电影</a><a href="#" class="con-word-3 fr">电视剧</a>
+				</li>
+				<li class="con-word11 clearfix">
+					<a href="#" class="con-word-2 fl">片花</a><a href="#" class="con-word-3 fr">综艺</a>
+				</li>
+				<li class="con-word11 clearfix">
+					<a href="#" class="con-word-2 fl">微电影</a><a href="#" class="con-word-3 fr">脱口秀</a>
+				</li>
+			</ul>
+			<ul class="con-word2 fl">
+				<li class="con-word22 clearfix">
+					<a href="#" class="con-word-4 fl">动漫</a>
+					<a href="#" class="con-word-5 fr">生活</a>
+				</li>
+				<li class="con-word22 clearfix">
+					<a href="#" class="con-word-4 fl">少儿</a>
+					<a href="#" class="con-word-5 fr">母婴</a>
+				</li>
+				<li class="con-word22 clearfix">
+					<a href="#" class="con-word-4 fl">游戏</a>
+					<a href="#" class="con-word-5 fr">健康</a>
+				</li>
+			</ul>
+			<ul class="con-word2 fl">
+				<li class="con-word22 clearfix">
+					<a href="#" class="con-word-4 fl">音乐</a>
+					<a href="#" class="con-word-5 fr">搞笑</a>
+				</li>
+				<li class="con-word22 clearfix">
+					<a href="#" class="con-word-4 fl">时尚</a>
+					<a href="#" class="con-word-5 fr">原创</a>
+				</li>
+				<li class="con-word22 clearfix">
+					<a href="#" class="con-word-4 fl">旅游</a>
+					<a href="#" class="con-word-5 fr">拍客</a>
+				</li>
+			</ul>
+			<ul class="con-word1 fl">
+				<li class="con-word11 clearfix">
+					<a href="#" class="con-word-2 fl">电影</a><a href="#" class="con-word-3 fr">电视剧</a>
+				</li>
+				<li class="con-word11 clearfix">
+					<a href="#" class="con-word-2 fl">片花</a><a href="#" class="con-word-3 fr">综艺</a>
+				</li>
+				<li class="con-word11 clearfix">
+					<a href="#" class="con-word-2 fl">微电影</a><a href="#" class="con-word-3 fr">脱口秀</a>
+				</li>
+			</ul>
+			<ul class="con-word3 fl">
+				<li class="con-word33 clearfix">
+					<a href="#" class="con-word-6 fl">风云榜</a>
+					<a href="#" class="con-word-7 fr">公益</a>
+				</li>
+				<li class="con-word33 clearfix">
+					<a href="#" class="con-word-6 fl">全网影视</a>
+					<a href="#" class="con-word-7 fr">直播中心</a>
+				</li>
+				<li class="con-word33 clearfix">
+					<a href="#" class="con-word-6 fl">爱奇艺搜索</a>
+					<a href="#" class="con-word-7 fr">爱奇艺出品</a>
+				</li>
+			</ul>
+			<ul class="con-word4 fl">
+				<li class="con-word33 clearfix">
+					<a href="#" class="con-word-6 fl">PPS游戏</a>
+					<a href="#" class="con-word-7 fr">PPS奇秀</a>
+				</li>
+				<li class="con-word33 clearfix">
+					<a href="#" class="con-word-6 fl">应用商店</a>
+					<a href="#" class="con-word-7 fr"><span class="conword-spe">VIP</span>会员</a>
+				</li>
+				<li class="con-word33 clearfix">
+					<a href="#" class="con-word-8 fl">爱奇艺商城<span class="con-cir"></span></a>
+					<a href="#" class="con-word-9 fr">个人中心<span class="con-cir1"></a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="focus clearfix">
+		<div class="focus-left fl">
+			<div class="focus-today">今日焦点<a href="#" class="focus-more">更多&gt;</a><a href="#" class="focus-show">独播</a></div>
+			<dl class="focus-word">
+				<dt class="focus-word1">北京市委副书记吕锡文涉严重违纪被查</dt>
+				<dd class="focus-word2">巴基斯坦向中国出售瓜达尔港 或成重要军事基地</dd>
+				<dd class="focus-word2">巴基斯坦向中国出售瓜达尔港 或成重要军事基地</dd>
+				<dd class="focus-word2">巴基斯坦向中国出售瓜达尔港 或成重要军事基地</dd>
+				<dd class="focus-word2">巴基斯坦向中国出售瓜达尔港 或成重要军事基地</dd>
+				<dd class="focus-word2">巴基斯坦向中国出售瓜达尔港 或成重要军事基地</dd>
+				<dd class="focus-word2">巴基斯坦向中国出售瓜达尔港 或成重要军事基地</dd>
+			</dl>
+			<div class="left-pic clearfix">
+				<img src="img/15.jpg" class="fl">
+				<img src="img/16.jpg" class="fr">
+			</div>
+		</div>
+		<div class="focus-center fl">
+			<img src="img/17.jpg">
+			<ul class="f-cen-word">
+				<li class="focus-word2">《大牌对王牌》本周五早八点:蒋劲夫率爷们班夺冠</li>
+				<li class="focus-word2">&nbsp;MAMA:BTS独家问候粉丝:周渝民求婚过程全曝光</li>
+				<li class="focus-word2">《大牌对王牌》本周五早八点:蒋劲夫率爷们班夺冠</li>
+				<li class="focus-word2">《大牌对王牌》本周五早八点:蒋劲夫率爷们班夺冠</li>
+				<li class="focus-word2">《大牌对王牌》本周五早八点:蒋劲夫率爷们班夺冠</li>
+			</ul>
+		</div>
+		<div class="focus-right fl">
+			<img src="img/18.jpg" class="right-pic">
+			<img src="img/19.jpg" class="right-pic">
+			<img src="img/20.jpg">
+		</div>
+	</div>
+	<div class="box1">
+		<div class="variety clearfix">
+			<div class="vartop-left fl">
+				<div class="varleft-word">综艺<a href="#" class="varleft-word1">更多&gt;</a><a href="#" class="varleft-word2">爱上超模第二季 /</a><a href="#" class="varleft-word2">晓松奇谈 /</a><a href="#" class="varleft-word2">大牌对王牌 /</a><a href="#" class="varleft-word2">流行之王</a><span class="erke"></span>
+				</div>
+			</div>
+			<div class="vartop-right fr">
+			<div class="varright-word">精彩推荐<a href="#" class="varleft-word1">更多&gt;</a></div>
+			</div>
+		</div>
+		<div class="variety-pic clearfix">
+			<img src="img/25.jpg" class="fl">
+			<div class="variety-center fl">
+					<img src="img/26.jpg">
+			<img src="img/27.jpg" class="cen-sec">
+			</div>
+			<div class="variety-center fl">
+				<img src="img/28.jpg">
+				<img src="img/29.jpg" class="cen-sec">
+			</div>
+			<div class="variety-right fr">
+				<div class="varrig-pic"></div>
+				<ul class="var-right-word">
+					<li class="varrig-word">乔振宇条中年迪斯科</li>
+					<li class="varrig-word">乔振宇条中年迪斯科</li>
+					<li class="varrig-word">乔振宇条中年迪斯科</li>
+					<li class="varrig-word">钟汉良的《普通人》</li>
+					<li class="varrig-word">乔振宇条中年迪斯科</li>
+				</ul>
+			</div>
+		</div>
+		<div class="running">
+			<span class="running-word">奔跑吧兄弟第三季</span>
+			<span class="running-word1">独播</span>
+			<span class="running-word2">进入专题 &gt;</span>
+		</div>
+		<div class="run-pic clearfix">
+			<img src="img/32.jpg" class="fl">
+			<img src="img/32.jpg" class="runpic-1 fl">
+			<img src="img/33.jpg" class="runpic-1 fl">
+			<img src="img/33.jpg" class="runpic-1 fl">
+			<img src="img/34.jpg" class="runpic-1 fl">
+		</div>
+		<div class="running1">
+			<span class="running-word">脱口秀</span>
+			<span class="running-word2">更多 &gt;</span>
+		</div>
+		<div class="run-pic clearfix">
+			<img src="img/35.jpg" class="fl">
+			<img src="img/36.jpg" class="runpic-1 fl">
+			<img src="img/37.jpg" class="runpic-1 fl">
+			<img src="img/38.jpg" class="runpic-1 fl">
+			<img src="img/39.jpg" class="runpic-1 fl">
+		</div>
+		<iframe src="img/40.jpg" frameborder="0" scrolling="no"></iframe>
+		<div class="joy clearfix">
+			<div class="joy-left fl">
+				<div class="varleft-word">娱乐<a href="#" class="varleft-word1">更多&gt;</a><a href="#" class="varleft-word2">大牌对王牌 /</a><a href="#" class="varleft-word2">爱奇艺早班机 /</a><a href="#" class="varleft-word2">功能大星探 /</a><a href="#" class="varleft-word2">帕帕帮  /</a><a href="#" class="varleft-word2">泡菜帮  /</a><a href="#" class="varleft-word2">娱乐猛回头</a>
+				</div>
+			</div>
+			<img src="img/42.jpg" class="fr">
+		</div>
+		<div class="joy-pic clearfix">
+			<img src="img/43.jpg" class="fl">
+			<div class="joy-pic2 fl">
+				<img src="img/44.jpg" class="joypic-1">
+				<img src="img/45.jpg">
+			</div>
+			<div class="joy-pic2 fl">
+				<img src="img/45.jpg" class="joypic-1">
+				<img src="img/44.jpg">
+			</div>
+			<div class="joy-pic2 fl">
+				<img src="img/44.jpg" class="joypic-1">
+				<img src="img/45.jpg">
+			</div>
+		</div>
+		<div class="like">
+			<div class="like-top">
+				<div class="varleft-word">猜你喜欢<a href="#" class="varleft-word1">更多&gt;</a><a href="#" class="varleft-word2">我的播放记录 /</a><a href="#" class="varleft-word2">我的收藏 /</a><a href="#" class="varleft-word2">我的记录 /</a>
+				</div>
+		</div>
+		<div class="like-pics">
+			<div class="like-pic fl">
+				<div class="like-pic1"></div>
+				<div class="likepic-word">
+					<p class="likepic-word1">蜀山战纪第1季</p>
+					<p class="likepic-word2"> 赵丽颖陈伟霆虐恋情深</p>
+				</div>
+				<div class="like-pic2"></div>
+				<div class="likepic-word">
+					<p class="likepic-word1">叮咚妹你好</p>
+					<p class="likepic-word2"> 隐秘镜头下韩国超模夫妇</p>
+				</div>
+			</div>
+			<div class="like-pic-2 fl">
+				<div class="like-pic3"></div>
+				<div class="likepic-word">
+					<p class="likepic-word1">城管队长被当街砍死</p>
+					
+				</div>
+				<div class="like-pic2"></div>
+				<div class="likepic-word">
+					<p class="likepic-word1">欢乐囧图精选集</p>
+					<p class="likepic-word2"> 笑尿!脑残妹子作死欢乐多</p>
+				</div>
+			</div>
+			<div class="like-pic-3 fl">
+				<div class="like-pic4"></div>
+				<div class="likepic-word">
+					<p class="likepic-word1">飞碟冷知识</p>
+					<p class="likepic-word2"> 羞羞!鸳鸯浴的N种洗法</p>
+				</div>
+				<div class="like-pic2"></div>
+				<div class="likepic-word">
+					<p class="likepic-word1">欢乐囧图精选集</p>
+					<p class="likepic-word2"> 笑尿!脑残妹子作死欢乐多</p>
+				</div>
+			</div>
+			<div class="like-pic-4 fl">
+				<div class="like-pic5"></div>
+				<div class="likepic-word">
+					<p class="likepic-word1">催眠大师搞笑锦集</p>
+					<p class="likepic-word2"> 二货妹子把裤锦集</p>
+				</div>
+				<div class="like-pic2"></div>
+				<div class="likepic-word">
+					<p class="likepic-word1">野汉子</p>
+					<p class="likepic-word2">女汉子的传奇抗战生涯</p>
+				</div>
+			</div>
+			<div class="like-pic-5 fl">
+				<div class="like-pic6"></div>
+				<div class="likepic-word">
+					<p class="likepic-word1">催眠大师搞笑锦集</p>
+					<p class="likepic-word2"> 二货妹子把裤锦集</p>
+				</div>
+				<div class="likepic-spe">进入个人中心&gt;</div>
+			</div>
+		</div>
+		<div class="promotion">推广广告</div>
+		<div class="pro-adv"></div>
+		<div class="variety1 clearfix">
+			<div class="vartop-left fl">
+				<div class="varleft-word">电影<a href="#" class="varleft-word1">更多&gt;</a><a href="#" class="varleft-word2">爱奇艺电影网&nbsp;&nbsp;/</a><a href="#" class="varleft-word2">网络大电影&nbsp;&nbsp;/</a><a href="#" class="varleft-word2">VIP会员&nbsp;&nbsp;/</a><a href="#" class="varleft-word2">爱大片:单身男士N种自嗨指南</a>
+				</div>
+			</div>
+			<div class="vartop-right fr">
+				<div class="varright-word">电影榜<a href="#" class="varleft-word1">更多&gt;</a></div>
+			</div>
+		</div>
+		<div class="film clearfix">
+			<div class="film-left clearfix fl">
+				<div class="film-left1 fl">
+					<img src="img/53.jpg">
+					<img src="img/54.jpg" class="film-left-1">
+				</div>
+				<div class="film-left1 fl">
+					<img src="img/55.jpg">
+					<img src="img/56.jpg" class="film-left-1">
+				</div>
+				<div class="film-left1 fl">
+					<img src="img/53.jpg">
+					<img src="img/54.jpg" class="film-left-1">
+				</div>
+				<div class="film-left1 fl">
+					<img src="img/55.jpg">
+					<img src="img/56.jpg" class="film-left-1">
+				</div>
+			</div>
+			<div class="film-right fr">
+				<ul>
+					<li class="film-right-1 clearfix"><span class="film-right-num fl">1</span>&nbsp;&nbsp;道士下山<span class="smallicon fr"></li>
+					<li class="film-right-1 clearfix"><span class="film-right-num fl">2</span>&nbsp;&nbsp;山炮进城<span class="smallicon fr"></li>
+					<li class="film-right-1 clearfix"><span class="film-right-num fl">3</span>&nbsp;&nbsp;斗地主<span class="smallicon fr"></li>
+					<li class="film-right-1 clearfix"><span class="film-right-num1 fl">4</span>&nbsp;&nbsp;坏姐姐之拆婚联盟<span class="smallicon fr"></li>
+					<li class="film-right-1 clearfix"><span class="film-right-num1 fl">5</span>&nbsp;&nbsp;我是路人甲<span class="smallicon fr"></li>
+					<li class="film-right-1 clearfix"><span class="film-right-num1 fl">6</span>&nbsp;&nbsp;移动迷宫<span class="smallicon fr"></li>
+					<li class="film-right-1 clearfix"><span class="film-right-num1 fl">7</span>&nbsp;&nbsp;第三种爱情<span class="smallicon fr"></li>
+					<li class="film-right-1 clearfix"><span class="film-right-num1 fl">8</span>&nbsp;&nbsp;煎饼侠<span class="smallicon fr"></li>
+					<li class="film-right-1 clearfix"><span class="film-right-num1 fl">9</span>&nbsp;&nbsp;烈日灼心<span class="smallicon fr"></li>
+				</ul>
+				<img src="img/53.jpg" class="film-right-pic">
+			</div>
+		</div>
+		<div class="small-film clearfix">
+			<div class="small-film-left fl">
+				<div class="varleft-word3">微电影<a href="#" class="varleft-word1">更多&gt;</a><a href="#" class="varleft-word2">第二季深圳国际微电影节&nbsp;&nbsp;/</a><a href="#" class="varleft-word2">中国梦365个故事&nbsp;&nbsp;</a>
+				</div>
+			</div>
+			<div class="small-film-right fr">
+				<div class="varleft-word3">片花<a href="#" class="varleft-word1">更多&gt;</a><a href="#" class="varleft-word2">007系列回顾&nbsp;&nbsp;/</a><a href="#" class="varleft-word2">11月院线观影指南&nbsp;&nbsp;</a>
+				</div>
+			</div>
+		</div>
+		<div class="smallfilm-pics clearfix">
+			<img src="img/58.jpg" class="smallfilm-pic fl">
+			<img src="img/59.jpg" class="smallfilm-pic fl">
+			<img src="img/60.jpg" class="smallfilm-pic fl">
+			<img src="img/61.jpg" class="smallfilm-pic fl">
+			<img src="img/61.jpg" class="fl">
+		</div>
+		<div class="variety1 clearfix">
+			<div class="vartop-left fl">
+				<div class="varleft-word">电视剧<a href="#" class="varleft-word1">更多&gt;</a><a href="#" class="varleft-word2">内地&nbsp;&nbsp;/</a><a href="#" class="varleft-word2">韩剧&nbsp;&nbsp;/</a><a href="#" class="varleft-word2">日剧&nbsp;&nbsp;/</a><a href="#" class="varleft-word2">美剧&nbsp;&nbsp;/</a><a href="#" class="varleft-word2">自制剧</a>
+				</div>
+			</div>
+			<div class="vartop-right fr">
+			<div class="varright-word">电视剧榜<a href="#" class="varleft-word1">更多&gt;</a></div>
+			</div>
+		</div>
+		<div class="tv-pics clearfix">
+			<div class="tv-pic fl">
+				<img src="img/63.jpg">
+				<img src="img/63.jpg" class="tv-pic-1">
+			</div>
+			<div class="tv-pic2 fl">
+				<img src="img/64.jpg">
+				<img src="img/64.jpg" class="tv-pic-1">
+			</div>
+			<div class="tv-pic2 fl">
+				<img src="img/65.jpg">
+				<img src="img/65.jpg" class="tv-pic-1">
+			</div>
+			<div class="tv-pic2 fl">
+				<img src="img/66.jpg">
+				<img src="img/66.jpg" class="tv-pic-1">
+			</div>
+			<div class="film-right fr">
+				<ul>
+					<li class="film-right-2 clearfix"><span class="film-right-num fl">1</span>&nbsp;&nbsp;道士下山<span class="smallicon fr"></span></li>
+					<li class="film-right-2 clearfix"><span class="film-right-num fl">2</span>&nbsp;&nbsp;反恐特战队<span class="smallicon fr"></li>
+					<li class="film-right-2 clearfix"><span class="film-right-num fl">3</span>&nbsp;&nbsp;大秧歌<span class="smallicon fr"></li>
+					<li class="film-right-2 clearfix"><span class="film-right-num1 fl">4</span>&nbsp;&nbsp;大好时光<span class="smallicon fr"></li>
+					<li class="film-right-2 clearfix"><span class="film-right-num1 fl">5</span>&nbsp;&nbsp;琅琊榜<span class="smallicon fr"></li>
+					<li class="film-right-2 clearfix"><span class="film-right-num1 fl">6</span>&nbsp;&nbsp;北上广不相信眼泪<span class="smallicon fr"></li>
+					<li class="film-right-2 clearfix"><span class="film-right-num1 fl">7</span>&nbsp;&nbsp;灵魂摆渡2<span class="smallicon fr"></li>
+					<li class="film-right-2 clearfix"><span class="film-right-num1 fl">8</span>&nbsp;&nbsp;野山鹰<span class="smallicon fr"></li>
+					
+				</ul>
+				<img src="img/66.jpg" class="film-right-pic">
+			</div>
+		</div>
+		<div class="promotion">推广广告</div>
+		<div class="pro-adv"></div>
+		<div class="child-main clearfix">
+			<div class="child-left fl">
+				<div class="varleft-word">动漫<a href="#" class="varleft-word1">更多&gt;</a><a href="#" class="varleft-word2">真人特摄&nbsp;&nbsp;/</a><a href="#" class="varleft-word2">动画电影&nbsp;&nbsp;</a>
+				</div>
+			</div>
+			<div class="child-center fl">
+				<div class="varleft-word">动漫<a href="#" class="varleft-word1">更多&gt;</a>
+				</div>
+			</div>
+			<div class="child-center fr">
+				<div class="varleft-word">教育<a href="#" class="varleft-word1">更多&gt;</a>
+				</div>
+			</div>
+	 	</div>
+	    <div class="child-main-pics clearfix">
+	    	<div class="child-pic1 fl">
+	    		<img src="img/68.jpg">
+	    	</div>
+	    	<div class="child-pic2 fl">
+	    		<img src="img/69.jpg">
+	    		<img src="img/70.jpg" class="child-pic-1">
+	    	</div>
+			<div class="child-pic2 fl">
+	    		<img src="img/69.jpg">
+	    		<img src="img/70.jpg" class="child-pic-1">
+	    	</div>
+	    	<div class="child-pic2 fl">
+	    		<img src="img/69.jpg">
+	    		<img src="img/70.jpg" class="child-pic-1">
+	    	</div>
+		</div>
+		<div class="child-main clearfix">
+			<div class="child-left1 fl">
+				<div class="varleft-word">体育<a href="#" class="varleft-word1">更多&gt;</a><a href="#" class="varleft-word2">足球&nbsp;&nbsp;/</a><a href="#" class="varleft-word2">篮球&nbsp;&nbsp;/</a><a href="#" class="varleft-word2">美网&nbsp;&nbsp;/</a><a href="#" class="varleft-word2">昆仑决&nbsp;&nbsp;</a>
+				</div>
+			</div>
+			<div class="child-left2 fl">
+				<div class="varleft-word">音乐榜<a href="#" class="varleft-word1">更多&gt;</a><a href="#" class="varleft-word2">爱奇艺音乐榜&nbsp;&nbsp;</a>
+				</div>
+			</div>
+			<div class="child-center fr">
+				<div class="varleft-word">时尚<a href="#" class="varleft-word1">更多&gt;</a>
+				</div>
+			</div>
+	 	</div>
+	 	<div class="fashion-pics clearfix">
+	 		<div class="fashion-pic1 fl" >
+	 			<img src="img/71.jpg">
+	 			<img src="img/72.jpg" class="fashion-pic-1">
+	 		</div>
+	 		<div class="fashion-pic2 fl" >
+	 			<img src="img/73.jpg">
+	 			<img src="img/74.jpg" class="fashion-pic-1">
+	 		</div>
+	 		<div class="fashion-pic3 fl" >
+	 			<img src="img/75.jpg">
+	 		</div>
+	 		<div class="fashion-pic2 fl" >
+	 			<img src="img/73.jpg">
+	 			<img src="img/74.jpg" class="fashion-pic-1">
+	 		</div>
+	 		<div class="fashion-pic4 fr" >
+	 			<img src="img/75.jpg">
+	 		</div>
+	 	</div>
+	 	<div class="child-main clearfix">
+			<div class="child-left1 fl">
+				<div class="varleft-word">母婴<a href="#" class="varleft-word1">更多&gt;</a><a href="#" class="varleft-word2">孕期&nbsp;&nbsp;/</a><a href="#" class="varleft-word2">分娩时刻&nbsp;&nbsp;/</a><a href="#" class="varleft-word2">早教课堂&nbsp;&nbsp;</a>
+				</div>
+			</div>
+			<div class="child-left2 fl">
+				<div class="varleft-word">生活<a href="#" class="varleft-word1">更多&gt;</a><a href="#" class="varleft-word2">悦活汇&nbsp;&nbsp;/</a><a href="#" class="varleft-word2">美食专区&nbsp;&nbsp;/</a><a href="#" class="varleft-word2">健身季&nbsp;&nbsp;</a>
+				</div>
+			</div>
+			<div class="child-center fr">
+				<div class="varleft-word">健康<a href="#" class="varleft-word1">更多&gt;</a>
+				</div>
+			</div>
+	 	</div>
+	 	<div class="m-and-b clearfix">
+	 		<img src="img/76.jpg" class="m-and-b1 fl">
+	 		<img src="img/77.jpg" class="m-and-b1 fl">
+	 		<img src="img/76.jpg" class="m-and-b1 fl">
+	 		<img src="img/77.jpg" class="m-and-b1 fl">
+	 		<img src="img/78.jpg" class="m-and-b2 fr">
+	 	</div>
+	 	<div class="child-main clearfix">
+			<div class="child-left1 fl">
+				<div class="varleft-word">科技<a href="#" class="varleft-word1">更多&gt;</a><a href="#" class="varleft-word2">极客说&nbsp;&nbsp;/</a><a href="#" class="varleft-word2">前言技术&nbsp;&nbsp;/</a><a href="#" class="varleft-word2">风云榜&nbsp;&nbsp;</a>
+				</div>
+			</div>
+			<div class="child-left2 fl">
+				<div class="varleft-word">汽车<a href="#" class="varleft-word1">更多&gt;</a><a href="#" class="varleft-word2">保时捷Macan  GTS&nbsp;&nbsp;/</a><a href="#" class="varleft-word2">奥迪S8&nbsp;&nbsp;</a>
+				</div>
+			</div>
+			<div class="child-center fr">
+				<div class="varleft-word">财经<a href="#" class="varleft-word1">更多&gt;</a>
+				</div>
+			</div>
+	 	</div>
+	 	<div class="m-and-b clearfix">
+	 		<img src="img/79.jpg" class="m-and-b1 fl">
+	 		<img src="img/80.jpg" class="m-and-b1 fl">
+	 		<img src="img/81.jpg" class="m-and-b1 fl">
+	 		<img src="img/80.jpg" class="m-and-b1 fl">
+	 		<img src="img/81.jpg" class="m-and-b2 fr">
+	 	</div>
+	 	<div class="child-main clearfix">
+			<div class="child-left1 fl">
+				<div class="varleft-word">旅游<a href="#" class="varleft-word1">更多&gt;</a><a href="#" class="varleft-word2">翻滚吧地球&nbsp;&nbsp;/</a><a href="#" class="varleft-word2">XFUN欢乐俱乐部&nbsp;&nbsp;</a>
+				</div>
+			</div>
+			<div class="child-left2 fl">
+				<div class="varleft-word">纪录片<a href="#" class="varleft-word1">更多&gt;</a><a href="#" class="varleft-word2">VIP精选&nbsp;&nbsp;/</a><a href="#" class="varleft-word2">天罚&nbsp;&nbsp;/</a><a href="#" class="varleft-word2">热记录&nbsp;&nbsp;</a>
+				</div>
+			</div>
+			<div class="child-center fr">
+				<div class="varleft-word">军事<a href="#" class="varleft-word1">更多&gt;</a>
+				</div>
+			</div>
+	 	</div>
+	 	<div class="m-and-b clearfix">
+	 		<img src="img/82.jpg" class="m-and-b1 fl">
+	 		<img src="img/83.jpg" class="m-and-b1 fl">
+	 		<img src="img/84.jpg" class="m-and-b1 fl">
+	 		<img src="img/82.jpg" class="m-and-b1 fl">
+	 		<img src="img/83.jpg" class="m-and-b2 fr">
+	 	</div>
+	 	<div class="variety1 clearfix">
+			<div class="vartop-left fl">
+				<div class="varleft-word">原创<a href="#" class="varleft-word1">更多&gt;</a><a href="#" class="varleft-word2">原创热点&nbsp;&nbsp;/</a><a href="#" class="varleft-word2">新锐动画&nbsp;&nbsp;/</a><a href="#" class="varleft-word2">网络剧&nbsp;&nbsp;/</a><a href="#" class="varleft-word2">每周热播&nbsp;&nbsp;/</a><a href="#" class="varleft-word2">爱侃&nbsp;&nbsp;/</a><a href="#" class="varleft-word2">禽兽超人&nbsp;&nbsp;</a>
+				</div>
+			</div>
+			<div class="vartop-right fr">
+			<div class="varright-word">原创达人<a href="#" class="varleft-word1">更多&gt;</a></div>
+			</div>
+		</div>
+		<div class="create-pics clearfix">
+			<div class="create-pic1 fl">
+				<img src="img/85.jpg">
+			</div>
+			<div class="create-pic2 fl">
+				<img src="img/86.jpg">
+				<img src="img/86.jpg" class="create-pic-1">
+			</div>
+			<div class="create-pic2 fl">
+				<img src="img/87.jpg">
+				<img src="img/87.jpg" class="create-pic-1">
+			</div>
+			<ul class="create-pic3 fr">
+				<li class="create-pic-2">
+					<p class="create-pic-21">点星人视频</p>
+					<p class="create-pic-22">2,595人订阅</p>
+					<p class="create-pic-23">+订阅</p>
+				</li>
+				<li class="create-pic-2">
+					<p class="create-pic-21">黄豆包儿</p>
+					<p class="create-pic-22">111人订阅</p>
+					<p class="create-pic-23">+订阅</p>
+				</li>
+				<li class="create-pic-2">
+					<p class="create-pic-21">女神TV</p>
+					<p class="create-pic-22">2,056人订阅</p>
+					<p class="create-pic-23">+订阅</p>
+				</li>
+				<li class="create-pic-2">
+					<p class="create-pic-21">明白学堂官方</p>
+					<p class="create-pic-22">2,595人订阅</p>
+					<p class="create-pic-23">+订阅</p>
+				</li>
+			</ul>
+		</div>
+		<div class="small-film clearfix">
+			<div class="small-film-left fl">
+				<div class="varleft-word3">搞笑<a href="#" class="varleft-word1">更多&gt;</a><a href="#" class="varleft-word2">欢乐精选&nbsp;&nbsp;/</a><a href="#" class="varleft-word2">雷人囧事&nbsp;&nbsp;/</a><a href="#" class="varleft-word2">笑霸来了&nbsp;&nbsp;</a>
+				</div>
+			</div>
+			<div class="small-film-right fr">
+				<div class="varleft-word3">拍客<a href="#" class="varleft-word1">更多&gt;</a><a href="#" class="varleft-word2">粉丝频道&nbsp;&nbsp;/</a><a href="#" class="varleft-word2">七嘴八舌&nbsp;&nbsp;/</a><a href="#" class="varleft-word2">饭点爽笑&nbsp;&nbsp;</a>
+				</div>
+			</div>
+		</div>
+		<div class="smallfilm-pics clearfix">
+			<img src="img/58.jpg" class="smallfilm-pic fl">
+			<img src="img/59.jpg" class="smallfilm-pic fl">
+			<img src="img/60.jpg" class="smallfilm-pic fl">
+			<img src="img/61.jpg" class="smallfilm-pic fl">
+			<img src="img/61.jpg" class="fl">
+		</div>
+		<div class="variety1 clearfix">
+			<div class="game fl">
+				<div class="varleft-word">游戏<a href="#" class="varleft-word1">更多&gt;</a><a href="#" class="varleft-word2">我的世界&nbsp;&nbsp;/</a><a href="#" class="varleft-word2">史丹利快报&nbsp;&nbsp;/</a><a href="#" class="varleft-word2">天策最脏教学&nbsp;&nbsp;/</a><a href="#" class="varleft-word2">秀你一脸&nbsp;&nbsp;</a>
+				</div>
+			</div>
+			<div class="vartop-right1 fr">
+				<div class="varright-word">PPS奇秀<a href="#" class="varleft-word1">更多&gt;</a>
+				<a href="#" class="varleft-word2">奇秀新星&nbsp;&nbsp;/</a><a href="#" class="varleft-word2">美女&nbsp;&nbsp;</a>
+				</div>
+			</div>
+		</div>
+		<div class="game-pics clearfix">
+			<div class="game-pic1 fl">
+				<img src="img/89.jpg">
+				<img src="img/90.jpg" class="game-pic-1">
+			</div>
+			<div class="game-pic2 fl">
+				<img src="img/91.jpg">
+				<img src="img/92.jpg" class="game-pic-1">
+			</div>
+			<div class="game-pic2 fl">
+				<img src="img/89.jpg">
+				<img src="img/90.jpg" class="game-pic-1">
+			</div>
+			<div class="game-pic2 fl">
+				<img src="img/91.jpg">
+				<img src="img/92.jpg" class="game-pic-1">
+			</div>
+			<div class="game-pic2 fl">
+				<img src="img/89.jpg">
+				<img src="img/90.jpg" class="game-pic-1">
+			</div>
+		</div>
+		<img src="img/93.jpg" class="adv">
+		<div class="partner clearfix">
+			<div class="pans fl">
+				<p class="pan1">合作伙伴<span class="pan-1">更多&gt;</span></p>
+				<div class="pan-word clearfix">
+					<ul class="pan2 fl">
+					<li>万达电影网</li>
+					<li>华测影视</li>
+					<li>首度V计划</li>
+					<li>智能电视网</li>
+				</ul>
+				<ul class="pan3 fl">
+					<li>华谊兄弟</li>
+					<li>百老汇</li>
+					<li>央广视讯</li>
+				</ul>
+				<ul class="pan3 fl">
+					<li>星美</li>
+					<li>百度视频</li>
+					<li>华录百纳</li>
+				</ul>
+				<ul class="pan3 fl">
+					<li>光线影业</li>
+					<li>百度百科</li>
+					<li>百度贴吧</li>
+				</ul>
+				<ul class="pan3 fl">
+					<li>电影网</li>
+					<li>hao123</li>
+					<li>爱奇艺天猫店</li>	
+				</ul>
+				</div>
+			</div>
+			<div class="pan fl">
+				<p class="pan1">爱奇艺动态<span class="pan-1">更多&gt;</span></p>
+				<div class="pan-word clearfix">
+					<ul class="pan2 fl">
+						<li>爱奇艺影业与China 3D战略伙伴</li>
+						<li>爱奇艺影业与NBC环球达成版权合作</li>
+						<li>《蜀山战纪》上线爱奇艺VIP会员</li>	
+					</ul>
+					<ul class="pan5 fl">
+						<li>爱奇艺影业与China 3D战略伙伴</li>
+						<li>爱奇艺影业与NBC环球达成版权合作</li>
+						<li>《蜀山战纪》上线爱奇艺VIP会员</li>	
+					</ul>
+				</div>
+			</div>
+		</div>
+
+
+	
+</div>
+	<img src="img/94.jpg" class="end">
+</div>
+
+</body>
+</html>

@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>灵魂回响</title>
+	<link rel="stylesheet" type="text/css" href="lhhx.css">
+<style>
+
+
+</style>
+<script>
+window.onload=function(){
+	function test(){
+	var oBtns=document.getElementById('btn1');
+	var oBtn=oBtns.getElementsByTagName('a');
+	var oPic=document.getElementById('pic');
+	var oLi=oPic.getElementsByTagName('li');
+	
+	// alert(oLi.length)
+		for (var i = 0; i <oBtn.length; i++) {
+			oBtn[i].index=i
+			oBtn[i].onmouseover=function(){
+				for (var i = 0; i < oBtn.length; i++) {
+					oBtn[i].className='conbtn-1';
+					oLi[i].style.display='none';
+				};
+				this.className='conbtn-1 active';
+				oLi[this.index].style.display='block';
+			}
+		};
+	}
+		test();
+	var oMain=document.getElementById('main3');
+ 	var oBtn1=oMain.getElementsByTagName('li');
+ 	var oH3=oMain.getElementsByTagName('h3');
+ 	var oH4=oMain.getElementsByTagName('h4');
+ 	// alert(oH3.length)
+
+	for(var i=0; i<oBtn1.length; i++){
+		oBtn1[i].index=i;
+		oBtn1[i].onmouseover=function(){
+			for(var i=0; i<oBtn1.length;i++){
+				oH3[i].className='main-r-21 show';
+				oH4[i].className='main-r-22 hide';
+				}
+			oH3[this.index].className='main-r-21 hide';
+			oH4[this.index].className='main-r-22 show';
+			}
+		}
+
+
+	function changeone(a,b,c,d,e,f,g){
+		var oBtn2=document.getElementById(a)
+		var aBtn=oBtn2.getElementsByTagName(b)
+		var Word=document.getElementById(c)
+		var oCon=Word.getElementsByTagName(d)
+	// alert(aBtn.length)
+		for (var i = 0; i <aBtn.length; i++) {
+			aBtn[i].index=i
+			aBtn[i].onmouseover=function(){
+				for (var i = 0; i <aBtn.length; i++) {
+				aBtn[i].className='';
+				oCon[i].className=e;
+				};
+				this.className=f;
+				oCon[this.index].className=g;
+			}
+		};
+
+	}
+	changeone('btn2','li','conword','li','clearfix hide','active1','clearfix show')
+	changeone('main1','li','main2','li','hide','','show')
+	changeone('gamebtn','li','gamecon','li','hide','active2','show')
+	changeone('gamebtn1','li','gamecon1','li','hide','active2','show')
+	changeone('gamebtn2','li','gamecon2','li','hide','active2','show')
+}	
+</script>
+
+</head>
+<body>
+	<div class="box">
+		<div class="top clearfix">
+			<a href="###" class="top-1 fl"></a>
+			<ul class="top-2 clearfix fr">
+				<li class="top-21 fl"><a href="###" class="top-22">客服<span class="top-23"></span></a></li>
+				<li class="fl"><a href="###" class="top-22">畅游全服务<span class="top-23"></span></a></li>
+				<li class="top-24 fl"><a href="###" class="top-22">畅游全游戏<span class="top-23"></span></a></li>
+			</ul>
+			<ul class="top-3 clearfix fr">
+				<li class="top-31 clearfix fl">
+					<a href="#" class="top-32 fl"></a>
+					<a href="###" class="top-33 fl">注册</a>
+				</li>
+				<li class="top-31 clearfix fl">
+					<a href="#" class="top-34 fl"></a>
+					<a href="###" class="top-33 fl">充值</a>
+				</li>
+				<li class="top-31 clearfix fl">
+					<a href="#" class="top-35 fl"></a>
+					<a href="###" class="top-33 fl">游戏</a>
+				</li>
+			</ul>
+		</div>
+		<div class="top-bottom"></div>
+		<div class="big-bg">
+			<div class="box-in">
+				<div class="nav">
+					<div class="bg clearfix">
+						<div class="logo fl" title="灵魂回响"></div>
+						<ul class="nav-top fr clearfix">
+							<li class="navtop-word fl">
+								<a href="#" class="nav-btn">
+								<h4>首页</h4>
+								<h6>HOME</h6>
+								</a>
+							</li>
+							<li class="navtop-word1 fl">
+								<a href="#" class="nav-btn">
+									<h4>新闻公告</h4>
+									<h6>NEWS</h6>
+								</a>
+								<div class="nav-btn1">
+									<a href="#" class="nav-btn-1">游戏新闻</a>
+									<a href="#" class="nav-btn-2">官方公告</a>
+								</div>
+							</li>
+							<li class="navtop-word2 fl">
+								<a href="#" class="nav-btn">
+									<h4>游戏特色</h4>
+									<h6>FEATURES</h6>
+								</a>
+							</li>
+							<li class="navtop-word1 fl">
+								<a href="#" class="nav-btn">
+									<h4>新手指南</h4>
+									<h6>NEWBIT</h6>
+								</a>
+								<div class="nav-btn1">
+									<a href="#" class="nav-btn-1">新手指南</a>
+									<a href="#" class="nav-btn-2">职业专题</a>
+								</div>
+							</li>
+							<li class="navtop-word3 fl">
+								<a href="#" class="nav-btn">
+									<h4>游戏下载</h4>
+									<h6>DOWNLOAD</h6>
+								</a>
+							</li>
+							<li class="navtop-word1 fl">
+								<a href="#" class="nav-btn">
+									<h4>活动专区</h4>
+									<h6>ACTITIVY</h6>
+								</a>
+								<div class="nav-btn1">
+									<a href="#" class="nav-btn-1">新手指南</a>
+									<a href="#" class="nav-btn-2">职业专题</a>
+								</div>
+							</li>
+							<li class="navtop-word4 fl">
+								<a href="#" class="nav-btn">
+									<h4>视觉欣赏</h4>
+									<h6>VIDEOPTURE</h6>
+								</a>
+							</li>
+							<li class="navtop-word5 fl">
+								<a href="#" class="nav-btn">
+									<h4>玩家互动</h4>
+									<h6>INTERTION</h6>
+								</a>
+							</li>
+							<li class="navtop-word6 fl">
+								<a href="#" class="nav-btn">
+									<h4>客户服务</h4>
+									<h6>SERVICE</h6>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="content clearfix">
+					<div class="content-left fl">
+						<ul class="conleft-top clearfix">
+							<li class="con-left1">
+								<a href="###"class="con-pic1 fl"></a>
+							</li>
+							<li>
+								<a href="###"class="con-pic2 fl"></a>
+							</li>
+							<li> 
+								<a href="###"class="con-pic3 fl"></a>
+							</li>
+							<li>
+								<a href="###"class="con-pic4 fl"></a>
+							</li>
+							<li>
+								<a href="###"class="con-pic5 fl"></a>
+							</li>
+						</ul>
+						<div class="conleft-bottom">
+							<ul class="change" id="pic">
+								<li class="change-1 show" ></li>
+								<li class="change-2"></li>
+								<li class="change-3" ></li>
+							</ul>
+							<div class="conbtn" id="btn1">
+								<a href="#" class="conbtn-1 active" ></a>
+								<a href="#" class="conbtn-1"></a>
+								<a href="#" class="conbtn-1"></a>
+							</div>
+						</div>
+					</div>
+					<div class="content-right fl">
+						<img src="img/6.jpg" class="con-right1">
+						<div class="conright-cen clearfix">
+							<div class="conright-cen1">
+								<div class="conright-1 fl">
+								据您上次访问有 <a href="#" >200</a> 条更新<a href="#" class="conright-icon"></a>
+								</div>
+								<ul class="conright-2 fr clearfix">
+									<li class="fl">关注:</li>
+									<li class="fl"><a href="#" class="conright-21 fl"></a></li>
+									<li class="fl"><a href="#" class="conright-22"></a></li>
+									<li class="fl"><a href="#" class="conright-23"></a></li>
+								</ul>
+							</div>
+							<div class="conright-3">	
+								<ul class="conright-32 clearfix" id="btn2">
+									<li class="active1">
+									<a href="#">综合</a>
+									</li>
+									<li>
+									<a href="#">新闻</a>
+									</li>
+									<li>
+									<a href="#">公告</a>
+									</li>
+									<li>
+									<a href="#">媒体</a>
+									</li>
+								</ul>
+								<div class="conright-4">
+									<div class="conright-33">
+										<a href="#">4月8号大版开启 新职业术士魔神天降</a>
+									</div>
+									<ul class="conright-31" id="conword">
+										<li class="show clearfix">
+											<div class="conright-3-1 fl">
+												<p>【新闻】决战开启！6月4日全新版本Raid本上线</p>
+												<p>【新闻】决战开启！6月4日全新版本Raid本上线</p>
+												<p>【新闻】决战开启！6月4日全新版本Raid本上线</p>
+												<p>【新闻】决战开启！6月4日全新版本Raid本上线</p>
+												<p>【新闻】决战开启！6月4日全新版本Raid本上线</p>
+												<p>【新闻】决战开启！6月4日全新版本Raid本上线</p>
+											</div>
+											<div class="conright-3-2 fr">
+												<p>02/04</p>
+												<p>02/04</p>
+												<p>02/04</p>
+												<p>02/04</p>
+												<p>02/04</p>
+												<p>02/04</p>
+											</div>
+										</li>
+										<li class="hide clearfix">
+											<div class="conright-3-1 fl">
+												<p>【新闻】决战开启！6月4日全新版本Raid本上线</p>
+												<p>【新闻】决战开启！6月4日全新版本Raid本上线</p>
+												<p>【新闻】决战开启！6月4日全新版本Raid本上线</p>
+												<p>【新闻】决战开启！6月4日全新版本Raid本上线</p>
+												<p>【新闻】决战开启！6月4日全新版本Raid本上线</p>
+												<p>【新闻】决战开启！6月4日全新版本Raid本上线</p>
+
+											</div>
+											<div class="conright-3-2 fr">
+												<p>02/05</p>
+												<p>02/05</p>
+												<p>02/05</p>
+												<p>02/05</p>
+												<p>02/05</p>
+												<p>02/05</p>
+											</div>
+										</li>
+										<li class="hide clearfix">
+											<div class="conright-3-1 fl">
+												<p>【新闻】决战开启！6月4日全新版本Raid本上线</p>
+												<p>【新闻】决战开启！6月4日全新版本Raid本上线</p>
+												<p>【新闻】决战开启！6月4日全新版本Raid本上线</p>
+												<p>【新闻】决战开启！6月4日全新版本Raid本上线</p>
+												<p>【新闻】决战开启！6月4日全新版本Raid本上线</p>
+												<p>【新闻】决战开启！6月4日全新版本Raid本上线</p>
+											</div>
+											<div class="conright-3-2 fr">
+												<p>02/06</p>
+												<p>02/06</p>
+												<p>02/06</p>
+												<p>02/06</p>
+												<p>02/06</p>
+												<p>02/06</p>
+											</div>
+										</li>	
+										<li class="hide clearfix">
+											<div class="conright-3-1 fl">
+												<p>【新闻】决战开启！6月4日全新版本Raid本上线</p>
+												<p>【新闻】决战开启！6月4日全新版本Raid本上线</p>
+												<p>【新闻】决战开启！6月4日全新版本Raid本上线</p>
+												<p>【新闻】决战开启！6月4日全新版本Raid本上线</p>
+												<p>【新闻】决战开启！6月4日全新版本Raid本上线</p>
+												<p>【新闻】决战开启！6月4日全新版本Raid本上线</p>
+
+											</div>
+											<div class="conright-3-2 fr">
+												<p>02/07</p>
+												<p>02/07</p>
+												<p>02/07</p>
+												<p>02/07</p>
+												<p>02/07</p>
+												<p>02/07</p>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="conright-5 clearfix">
+									<a href="#" class="conright-51 fr">更多信息</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>	
+				<div class="adv">
+					<a href="#"><img src="img/7.jpg"></a>
+				</div>
+				<div class="main clearfix">
+					<div class="main-left fl">
+						<ul class="main-l-1 clearfix" id="main1">
+							<li><a href="#" class="main-l-11"></a></li>
+							<li><a href="#" class="main-l-12"></a></li>
+							<li><a href="#" class="main-l-13"></a></li>
+							<li><a href="#" class="main-l-14"></a></li>
+							<li><a href="#" class="main-l-15"></a></li>
+							<li><a href="#" class="main-l-16"></a></li>
+						</ul>
+						<ul class="main-l-2" id="main2">
+							<li class="show"><img src="img/8.jpg"></li>
+							<li class="hide"><img src="img/9.jpg"></li>
+							<li class="hide"><img src="img/10.jpg"></li>
+							<li class="hide"><img src="img/11.jpg"></li>
+							<li class="hide"><img src="img/12.jpg"></li>
+							<li class="hide"><img src="img/13.jpg"></li>
+						</ul>
+					</div>
+					<div class="main-right fr">
+						<div class="main-r1 clearfix">
+							<span class="main-r-11 fl"></span>
+							<span class="main-r-2-1 fl">活动中心</span>
+						</div>
+						<ul class="main-r2" id="main3">
+							<li class="main-r-2">
+								<h3 class="main-r-21 hide">
+									<a href="#" class="main-r-21-1 fl">1女武神的秘保</a>
+									<p class="main-r-21-2 fr">进行中</p>
+								</h3>
+								<h4 class="main-r-22 show">
+									<img src="img/1.jpg">
+									<div class="opabox clearfix">
+										<div class="opa"></div>
+										<p class="fl">女武神的秘保</p>
+										<p class="fr">共7,294,712人关注</p>
+									</div>
+								</h4>								
+							</li>
+							<li class="main-r-2">
+								<h3 class="main-r-21 show">
+									<a href="#" class="main-r-21-1 fl">1女武神的秘保</a>
+									<p class="main-r-21-2 fr">进行中</p>
+								</h3>
+								<h4 class="main-r-22 hide">
+									<img src="img/1.jpg">
+									<div class="opabox clearfix">
+										<div class="opa"></div>
+										<p class="fl">女武神的秘保</p>
+										<p class="fr">共7,294,712人关注</p>
+									</div>
+								</h4>								
+							</li>
+							<li class="main-r-2">
+								<h3 class="main-r-21 show">
+									<a href="#" class="main-r-21-1 fl">1女武神的秘保</a>
+									<p class="main-r-21-2 fr">进行中</p>
+								</h3>
+								<h4 class="main-r-22 hide">
+									<img src="img/1.jpg">
+									<div class="opabox clearfix">
+										<div class="opa"></div>
+										<p class="fl">女武神的秘保</p>
+										<p class="fr">共7,294,712人关注</p>
+									</div>
+								</h4>								
+							</li>
+							<li class="main-r-2">
+								<h3 class="main-r-21 show">
+									<a href="#" class="main-r-21-1 fl">1女武神的秘保</a>
+									<p class="main-r-21-2 fr">进行中</p>
+								</h3>	
+								<h4 class="main-r-22 hide">
+									<img src="img/1.jpg">
+									<div class="opabox clearfix">
+										<div class="opa"></div>
+										<p class="fl">女武神的秘保</p>
+										<p class="fr">共7,294,712人关注</p>
+									</div>
+								</h4>							
+							</li>
+							<li class="main-r-2">
+								<h3 class="main-r-21 show">
+									<a href="#" class="main-r-21-1 fl">1女武神的秘保</a>
+									<p class="main-r-21-2 fr">进行中</p>
+								</h3>
+								<h4 class="main-r-22 hide">
+									<img src="img/1.jpg">
+									<div class="opabox clearfix">
+										<div class="opa"></div>
+										<p class="fl">女武神的秘保</p>
+										<p class="fr">共7,294,712人关注</p>
+									</div>
+								</h4>								
+							</li>
+							<li class="main-r-2">
+								<h3 class="main-r-21 show">
+									<a href="#" class="main-r-21-1 fl">1女武神的秘保</a>
+									<p class="main-r-21-2 fr">进行中</p>
+								</h3>
+								<h4 class="main-r-22 hide">
+									<img src="img/1.jpg">
+									<div class="opabox clearfix">
+										<div class="opa"></div>
+										<p class="fl">女武神的秘保</p>
+										<p class="fr">共7,294,712人关注</p>
+									</div>
+								</h4>								
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="playgame clearfix">
+					<div class="game-left fl">
+						<div class="game-l-t">
+							<h4>快捷入口</h4>
+							<div class="clearfrix">
+								<ul class="fl">
+									<li>·账号管理</li>
+									<li>·账号安全</li>
+									<li>·BUG提交</li>
+									<li>·玩家社区</li>
+								</ul>
+								<ul class="fr">
+									<li>·兑换中心</li>
+									<li>·畅游知道</li>
+									<li>·客户端FAQ</li>
+									<li>·加速器下载</li>
+								</ul>
+							</div>
+						</div>
+						<div class="game-l-c">
+							<img src="img/14.jpg">
+						</div>
+						<div class="game-l-b ">
+							<a href="#" class="game-l-b1"></a>
+						</div>
+					</div>
+					<div class="game-center fl">
+						<div class="game-c-t clearfix">
+							<a href="#" class="fl"></a>
+							<span class="fl">玩家交流</span>
+						</div>
+						<div class="game-bottom">
+							<a href="#" class="game-m-word">更多信息&gt;</a>
+							<ul class="game-btn clearfix" id="gamebtn">
+								<li class="active2">玩家攻略</li>
+								<li>论坛热帖</li>
+								<li>社区精华</li>
+							</ul>
+							<ul class="game-con" id="gamecon">
+								<li class="show"><img src="img/16.jpg"></li>
+								<li class="hide"><img src="img/16.jpg"></li>
+								<li class="hide"><img src="img/16.jpg"></li>
+							</ul>
+						</div>
+						<div class="game-c-t1 clearfix">
+							<a href="#" class="fl"></a>
+							<span class="fl">媒体专区</span>
+						</div>
+						<div class="game-bottom">
+							<a href="#" class="game-m-word">更多信息&gt;</a>
+							<ul class="game-btn clearfix" id="gamebtn1">
+								<li class="active2">17173</li>
+								<li>新浪爱问</li>
+								<li>太平洋游戏</li>
+							</ul>
+							<ul class="game-con" id="gamecon1">
+								<li class="show"><img src="img/16.jpg"></li>
+								<li class="hide"><img src="img/16.jpg"></li>
+								<li class="hide"><img src="img/16.jpg"></li>
+							</ul>
+						</div>
+					</div>
+					<div class="game-right fl">
+						<div class="game-r-t">
+							<a href="#" class="fl"></a>
+							<span class="fl">游戏资料</span>
+						</div>
+						<div>
+							<img src="img/17.jpg">
+						</div>
+						<div class="game-c-t1 clearfix">
+							<a href="#" class="fl"></a>
+							<span class="fl">视觉欣赏</span>
+						</div>
+						<div class="game-right-bottom">
+							<a href="#" class="game-r-b1">更多信息&gt;</a>
+							<ul class="game-r-b2 clearfix" id="gamebtn2"> 
+								<li class="active2">游戏视频</li>
+								<li>游戏截图</li>
+							</ul>
+							<ul class="game-r-b3" id="gamecon2">
+								<li class="show clearfix">
+									<img src="img/m5-4.jpg" class="g-pic1 fl">
+									<img src="img/m5-1.jpg" class="fl">
+									<img src="img/m5-3.jpg" class="g-pic1 fl">
+									<img src="img/m5-2.jpg" class="fl">
+								</li>
+								<li class="hide clearfix">
+									<img src="img/m5-3.jpg" class="g-pic1 fl">
+									<img src="img/m5-2.jpg" class="fl">
+									<img src="img/m5-4.jpg" class="g-pic1 fl">
+									<img src="img/m5-1.jpg" class="fl">
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="end">
+					<div class="end1">
+						<img src="img/game_anc.jpg">
+						<p class="end-1">健康游戏公告</p>
+						<p class="end-2">抵制不良游戏，拒绝盗版游戏。注意自我保护，谨防受骗上当。适度游戏益脑，沉迷游戏伤身。合理安排时间，享受健康生活。</p>
+						<p class="end-3">本游戏适合18周岁以上的成年人用户，未满18周岁的未成年用户请在家长的监督下进行游戏。</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="theend">
+			<div class="theend1"></div>
+			<div class="theend2 clearfix">
+				<div class="theend-1 fl"></div>
+				<div class="theend-2 fl"></div>
+				<div class="theend-3 fl">
+					<p>北京畅游时代数码技术有限公司版权所有COPYRIGHT©2011 CHANGYOU.COM LIMITED.ALL RIGHTS RESERVED.法律声明|联系我们</p>
+					<p>京网文[2011]0260-093号|京ICP证：070525号</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body> 
+</html>

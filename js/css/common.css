@@ -1,0 +1,19 @@
+html, body, div, span, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,abbr, address, cite, code,del, dfn, em, img, ins, kbd, q, samp,small, strong, sub, sup, var,b, i,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside,input, figure, footer, header,hgroup, menu, nav, section, menu,time, mark, audio, video {margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent;}
+body,button,input,select,textarea{font:12px "arial","微软雅黑",\5b8b\4f53;}
+h1,h2,h3,h4,h5,h6{font-size:100%; font-weight:lighter; font-family: "arial","微软雅黑";color:#616161}
+dl, dt, dd, ol, ul{list-style: none;}
+address,cite,dfn,em,var{font-style:normal}
+form{display:inline}
+small{font-size:12px}
+ul,ol{list-style:none}
+a{text-decoration:none; color:#616161;font-family: "arial","微软雅黑"}
+a:hover{ color:#4CC2EA; text-decoration:none}
+sup{vertical-align:text-top}
+sub{vertical-align:text-bottom}
+legend{color:#000}
+fieldset,img{border:0;-ms-interpolation-mode:bicubic}
+button,input,select,textarea{font-size:100%;font-weight:lighter;}
+table{border-collapse:collapse;border-spacing:0}
+img{ display:block}
+body{overflow-x: hidden;}
